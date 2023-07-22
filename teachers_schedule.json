@@ -1,0 +1,71 @@
+{
+    "Vandana Ma'am": {
+      "schedule": {
+        "Monday": [
+          {"start_time": "08:00 AM", "end_time": "08:45 AM", "class": "Math"},
+          {"start_time": "09:00 AM", "end_time": "09:45 AM", "class": "Science"},
+          {"start_time": "10:00 AM", "end_time": "10:45 AM", "class": "English"}
+        ],
+        "Tuesday": [
+          {"start_time": "08:00 AM", "end_time": "08:45 AM", "class": "History"},
+          {"start_time": "09:00 AM", "end_time": "09:45 AM", "class": "Music"},
+          {"start_time": "10:00 AM", "end_time": "10:45 AM", "class": "Science"}
+        ],
+        "Wednesday": [
+          {"start_time": "08:00 AM", "end_time": "08:45 AM", "class": "English"},
+          {"start_time": "09:00 AM", "end_time": "09:45 AM", "class": "History"},
+          {"start_time": "10:00 AM", "end_time": "10:45 AM", "class": "Math"}
+        ],
+        "Thursday": [
+          {"start_time": "08:00 AM", "end_time": "08:45 AM", "class": "Science"},
+          {"start_time": "09:00 AM", "end_time": "09:45 AM", "class": "English"},
+          {"start_time": "10:00 AM", "end_time": "10:45 AM", "class": "History"}
+        ],
+        "Friday": [
+          {"start_time": "08:00 AM", "end_time": "08:45 AM", "class": "Math"},
+          {"start_time": "09:00 AM", "end_time": "09:45 AM", "class": "Science"},
+          {"start_time": "10:00 AM", "end_time": "10:45 AM", "class": "English"}
+        ],
+        "Saturday": [
+          {"start_time": "08:00 AM", "end_time": "08:45 AM", "class": "History"},
+          {"start_time": "09:00 AM", "end_time": "09:45 AM", "class": "Math"},
+          {"start_time": "10:00 AM", "end_time": "10:45 AM", "class": "Science"}
+        ]
+      }
+    },
+    "Alka Ma'am": {
+      "schedule": {
+        "Monday": [
+          {"start_time": "08:00 AM", "end_time": "08:45 AM", "class": "Science"},
+          {"start_time": "09:00 AM", "end_time": "09:45 AM", "class": "English"},
+          {"start_time": "10:00 AM", "end_time": "10:45 AM", "class": "History"}
+        ],
+        "Tuesday": [
+          {"start_time": "08:00 AM", "end_time": "08:45 AM", "class": "Math"},
+          {"start_time": "09:00 AM", "end_time": "09:45 AM", "class": "Science"},
+          {"start_time": "10:00 AM", "end_time": "10:45 AM", "class": "English"}
+        ],
+        "Wednesday": [
+          {"start_time": "08:00 AM", "end_time": "08:45 AM", "class": "History"},
+          {"start_time": "09:00 AM", "end_time": "09:45 AM", "class": "Math"},
+          {"start_time": "10:00 AM", "end_time": "10:45 AM", "class": "Science"}
+        ],
+        "Thursday": [
+          {"start_time": "08:00 AM", "end_time": "08:45 AM", "class": "English"},
+          {"start_time": "09:00 AM", "end_time": "09:45 AM", "class": "History"},
+          {"start_time": "10:00 AM", "end_time": "10:45 AM", "class": "Math"}
+        ],
+        "Friday": [
+          {"start_time": "08:00 AM", "end_time": "08:45 AM", "class": "Science"},
+          {"start_time": "09:00 AM", "end_time": "09:45 AM", "class": "English"},
+          {"start_time": "10:00 AM", "end_time": "10:45 AM", "class": "History"}
+        ],
+        "Saturday": [
+          {"start_time": "08:00 AM", "end_time": "08:45 AM", "class": "Math"},
+          {"start_time": "09:00 AM", "end_time": "09:45 AM", "class": "Science"},
+          {"start_time": "10:00 AM", "end_time": "10:45 AM", "class": "English"}
+        ]
+      }
+    }
+  }
+  
