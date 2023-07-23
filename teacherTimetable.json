@@ -1,0 +1,30 @@
+{
+    "teachers":{
+        "Ms.Vandana":{
+            "Monday":["1:class","2:class","3:class","4:free","5:free","6:class"],
+            "Tuesday":["1:free","2:class","3:class","4:free","5:class","6:class"],
+            "Wednesday":["1:class","2:class","3:class","4:free","5:free","6:free"],
+            "Thursday":["1:free","2:class","3:class","4:free","5:free","6:free"],
+            "Friday":["1:class","2:class","3:free","4:free","5:free","6:class"],
+            "Saturday":["1:class","2:class","3:class","4:class","5:free","6:class"]
+        },
+        "Ms.Alka":{ 
+            "Monday":["1:free","2:class","3:free","4:class","5:free","6:class"],
+            "Tuesday":["1:class","2:free","3:class","4:free","5:free","6:class"],
+            "Wednesday":["1:class","2:class","3:class","4:free","5:free","6:free"],
+            "Thursday":["1:class","2:class","3:class","4:free","5:free","6:free"],
+            "Friday":["1:class","2:class","3:free","4:free","5:free","6:class"],
+            "Saturday":["1:class","2:free","3:class","4:class","5:free","6:class"]
+        
+        },
+        "Ms.Kirti":{
+            "Monday":["1:class","2:free","3:class","4:class","5:class","6:free"],
+            "Tuesday":["1:class","2:class","3:class","4:free","5:free","6:class"],
+            "Wednesday":["1:class","2:free","3:class","4:class","5:free","6:free"],
+            "Thursday":["1:free","2:class","3:class","4:free","5:free","6:free"],
+            "Friday":["1:free","2:class","3:free","4:free","5:free","6:class"],
+            "Saturday":["1:class","2:class","3:free","4:class","5:free","6:class"]
+    
+        }
+    }
+}
