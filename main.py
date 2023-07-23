@@ -9,10 +9,10 @@ with open("teacherTimetable.json","r") as ttt:
 abName=input("Enter name of Absent Teacher: ")
 abDay=input("Day when the teacher is absent: ")
 
-# Getting classes of absent teacher
+# Step 3: Getting classes of absent teacher
 def absent_teacher(name,day):
 
-    # Getting classes of absent teacher and its number
+    # Getting classes of absent teacher and its lecture number
     absentTeacherClass=[]   
     absentTeacherClassNumber=[]
     for absClass in day:
@@ -25,8 +25,7 @@ def absent_teacher(name,day):
             # So we got classes of Absent Teacher
         # return day
 
-# Checking free classes for other teachers
-# def teacherFreeClass():
+# Step 4: Checking free classes for other teachers
     presentT=[]
     for presentTeachers in teacherTT["teachers"]:
         presentT.append(presentTeachers)
@@ -41,6 +40,9 @@ def absent_teacher(name,day):
     presentTeacherClass=[]
     presentTeacherClassNumber=[]
 
+# Step 5: With values of absent teacher's lecture, scanning for teacher who have free lecture
+
+    # Getting free lectures of present teachers
     while i<len(presentT):
         for freeClasses in teacherTT["teachers"][presentT[i]][abDay]:
             # print(freeClasses)
@@ -50,7 +52,7 @@ def absent_teacher(name,day):
                 # print(presentTeacherClass)
                 # print(presentTeacherClassNumber)
                 # print(f'i={i}')
-            
+    # Matching free lectures against absent teacher's lectures (proxy setting)
             for absValues in absentTeacherClassNumber:
                 for preValues in presentTeacherClassNumber:
                     # print(absValues, preValues)
@@ -63,8 +65,12 @@ def absent_teacher(name,day):
                     # if absValues!=preValues:
                     #     print(f"Couldn't find sustitute for lecture {absValues}")
         i=i+1
+
+# Step 6: Check where if there is no free lecture for absent teacher's lecture
     for noLecture in absentTeacherClassNumber:
             print(f"Couldn't find sustitute for lecture {noLecture}")
+
+
 absent_teacher(teacherTT["teachers"][abName],teacherTT["teachers"][abName][abDay])
 # teacherFreeClass()
 # print(teacherTT["Ms.Vandana"]['Monday'])
