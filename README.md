@@ -1,4 +1,4 @@
-# Schedule Savior
+# Schedule Savior [![](https://img.shields.io/badge/Language-Python-blue?logo=python)](https://www.python.org/)
 
 ## Aim of the Project
 The primary objective of the Schedule Savior project is to create a versatile and efficient solution for schools and educational institutions to manage teacher absences seamlessly. This project is designed to provide a robust tool that, on any given weekday (Monday to Friday), can generate a list of available substitute teachers to cover the entire day's schedule of an absent teacher.
@@ -58,11 +58,25 @@ We have exciting plans for the future of the Schedule Savior project. Here are s
 
 We invite you to be part of this journey and help shape the future of Schedule Savior!
 
+
+
+
 ## Hacktoberfest 2023
 
 ### We're Happy to announce that this Project is Hacktoberfest 2023 Accepted, So feel free to Contribute here!
 
-**Note:** Just to inform, Spammy PRs will be marked as Spam, or Invalid based on their activity, and no README.md updates will be accepted.
+## Note:
+1. Fake PR will not be accepted, Invalid based on their activity, and marked as `invalid`.
+
+2. We may ask to update/change the program if it includes bugs.
+
+3. Spammy PRs will be marked as `spam`
+   
+4. No README.md updates will be accepted.
 
 
 # Thank you, and Happy Contributing ✨
+
+
+
+![Static Badge](https://img.shields.io/badge/Owner-Idhant--6-purple?logo=github)    ![Static Badge](https://img.shields.io/badge/Co--owner-InvisiblePro-purple?logo=github)
