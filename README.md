@@ -1,4 +1,4 @@
-# Schedule Savior [![](https://img.shields.io/badge/Language-Python-blue?logo=python)](https://www.python.org/)
+# Schedule Savior 
 
 ## Aim of the Project
 The primary objective of the Schedule Savior project is to create a versatile and efficient solution for schools and educational institutions to manage teacher absences seamlessly. This project is designed to provide a robust tool that, on any given weekday (Monday to Friday), can generate a list of available substitute teachers to cover the entire day's schedule of an absent teacher.
@@ -44,6 +44,8 @@ We welcome contributions from developers, educators, and anyone interested in im
 6. Create a pull request to the main repository, outlining the changes you've made and the reasons behind them.
 
 7. Participate in the discussion and collaboration to refine and merge your contributions into the project.
+
+**All Languages are welcomed
 
 ## Project Roadmap
 We have exciting plans for the future of the Schedule Savior project. Here are some anticipated developments:
