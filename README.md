@@ -77,6 +77,12 @@ We invite you to be part of this journey and help shape the future of Schedule S
 4. No README.md updates will be accepted.
 
 
+## Tools and Languages:
+[<img src="https://cdn.iconscout.com/icon/free/png-256/python-3521655-2945099.png" width="40px" />](https://www.python.org/) &nbsp;&nbsp;
+[<img alt="Visual Studio Code" src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png" width="40px" />](https://code.visualstudio.com/) &nbsp;&nbsp;
+[<img alt="Github" src="https://cdn.freebiesupply.com/logos/large/2x/github-icon-logo-png-transparent.png" width="45px" />](https://code.visualstudio.com/) &nbsp;&nbsp;
+[<img alt="JSON" src="https://cdn1.iconfinder.com/data/icons/smashicons-file-types-yellow/58/28_-JSON_File-_Yellow-1024.png" width="40px"/>]()
+
 # Thank you, and Happy Contributing ✨
 
 
