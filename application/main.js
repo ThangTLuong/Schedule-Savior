@@ -1,5 +1,5 @@
-const path = require('path')
-const { app, BrowserWindow, ipcRenderer } = require('electron');
+const { app, BrowserWindow } = require('electron');
+const path = require('path');
 
 const isDev = process.env.NODE_ENV !== 'development';
 const isMac = process.platform === 'darwin';
@@ -14,8 +14,8 @@ function createMainWindow() {
   if (isDev) {
     mainWindow.webContents.openDevTools();
   }
-
-  mainWindow.loadFile(path.join(__dirname, './public/index.html'));
+  mainWindow.setMinimumSize(1000, 600);
+  mainWindow.loadFile(path.join(__dirname, 'index.html'));
 }
 
 app.whenReady().then(() => {
