@@ -1,19 +1,19 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
 
-const isDev = process.env.NODE_ENV !== 'development';
 const isMac = process.platform === 'darwin';
 
 function createMainWindow() {
   const mainWindow = new BrowserWindow({
     title:  'Schedule Savior',
-    width: isDev ? 1000 : 800,
+    width: 1000,
     height: 600,
+    webPreferences: {
+      nodeIntegration: false,
+      preload: path.join(__dirname, 'preload.js')
+    }
   });
 
-  if (isDev) {
-    mainWindow.webContents.openDevTools();
-  }
   mainWindow.setMinimumSize(1000, 600);
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
 }
