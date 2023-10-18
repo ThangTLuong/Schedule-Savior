@@ -1,9 +1,12 @@
+var red = 'rgb(255, 120, 125)';
+var blue = 'rgb(173, 216, 230)';
+
 export function createColorBox(container, id) {
   const colorBox = document.createElement('div');
   colorBox.setAttribute('id', id);
 
-  if (container !== 'timesheet') {
-    colorBox.style.backgroundColor = 'rgb(173, 216, 230)';
+  if (container.id === 'timesheet') {
+    colorBox.style.backgroundColor = blue;
 
     let isClicked = false;
 
@@ -26,11 +29,12 @@ export function createColorBox(container, id) {
   }
 
   container.appendChild(colorBox);
+  return colorBox;
 }
 
 function toggleColor(colorBox) {
   const currentColor = colorBox.style.backgroundColor;
-  const newColor = currentColor === 'rgb(173, 216, 230)' ? 'rgb(144, 238, 144)' : 'rgb(173, 216, 230)';
+  const newColor = currentColor === blue ? red : blue;
   colorBox.style.backgroundColor = newColor;
 }
 

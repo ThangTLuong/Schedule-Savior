@@ -8,6 +8,7 @@ function createMainWindow() {
     title:  'Schedule Savior',
     width: 1000,
     height: 600,
+    // frame: false,
     webPreferences: {
       nodeIntegration: false,
       preload: path.join(__dirname, 'preload.js')
