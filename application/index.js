@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   const button = document.getElementById('submit')
+  const data = {};
 
   button.addEventListener('click', () => {
     const timesheets = document.querySelectorAll('#timesheet');
@@ -31,10 +32,10 @@ document.addEventListener('DOMContentLoaded', () => {
         timeArray.push(timeData);
       });
 
-      if (timeArray.length !== 0) console.log(`${timesheet.dataset.day}: `, timeArray);
+      data[timesheet.dataset.day] = timeArray;
     });
 
-    
+    sendToBackend(data);
   });
 });
 
@@ -74,11 +75,19 @@ function generateTimesheet() {
   eachSheet.forEach((timesheet) => {
     for (let i = 0; i < 48; i++) {
       const timeBox = createColorBox(timesheet, 'colorBox');
-      const time = new Date(startTime.getTime() + i * 15 * 60 * 1000); 
-      const hours = time.getHours().toString().padStart(2, '0');
-      const minutes = time.getMinutes().toString().padStart(2, '0');
+      const startTimeClone = new Date(startTime.getTime() + i * 15 * 60 * 1000);
+      const endTimeClone = new Date(startTimeClone.getTime() + 15 * 60 * 1000);
 
-      timeBox.dataset.time = `${hours}:${minutes}`;
+      const startHours = startTimeClone.getHours().toString().padStart(2, '0');
+      const startMinutes = startTimeClone.getMinutes().toString().padStart(2, '0');
+      const endHours = endTimeClone.getHours().toString().padStart(2, '0');
+      const endMinutes = endTimeClone.getMinutes().toString().padStart(2, '0');
+
+      timeBox.dataset.time = `${startHours}:${startMinutes} - ${endHours}:${endMinutes}`;
     }
   });
+}
+
+function sendToBackend(data) {
+  ipcRenderer.send('data-to-backend', data);
 }
