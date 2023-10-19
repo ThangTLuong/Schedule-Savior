@@ -11,11 +11,16 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const button = document.getElementById('submit')
+  const button = document.getElementById('submit');
   const data = {};
 
   button.addEventListener('click', () => {
     const timesheets = document.querySelectorAll('#timesheet');
+    const firstname = document.getElementById('firstname').value;
+    const lastname = document.getElementById('lastname').value;
+
+    data['professor'] = `${lastname}, ${firstname}`;
+    data['schedule'] = {};
 
     timesheets.forEach((timesheet) => {
       const timeboxes = timesheet.querySelectorAll('#colorBox');
@@ -31,8 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         timeArray.push(timeData);
       });
-
-      data[timesheet.dataset.day] = timeArray;
+      
+      data['schedule'][timesheet.dataset.day] = timeArray;
     });
 
     sendToBackend(data);
