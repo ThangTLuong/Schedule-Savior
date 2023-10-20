@@ -7,4 +7,7 @@ contextBridge.exposeInMainWorld('ipcRenderer', {
   on: (channel, listener) => {
     ipcRenderer.on(channel, listener);
   },
+  navigateToPage: (filename) => {
+    ipcRenderer.send('navigate-to', filename);
+  },
 });

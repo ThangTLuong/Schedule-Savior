@@ -2,9 +2,12 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: './application/index.js',
+  entry: {
+    main: './application/index.js',
+    insert: './application/src/pages/insert-page.js',
+  },
   output: {
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'application', 'static', 'scripts'),
   },
   module: {
